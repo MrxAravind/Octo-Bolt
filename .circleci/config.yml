@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: SpeedTest
-          command: apt install pip && pip install speedtest-cli && speedtest
+          command: sudo apt install pip && pip install speedtest-cli && speedtest
       - run:
           name: Neofetch
-          command: apt install neofetch && neofetch 
+          command: sudo apt install neofetch && neofetch 
