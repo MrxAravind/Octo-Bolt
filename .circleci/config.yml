@@ -9,7 +9,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      # Replace this with steps to build a package, or executable
       - run:
           name: SpeedTest
-          command: pip install speedtest-cli && speedtest
+          command: apt install pip && pip install speedtest-cli && speedtest
+      - run:
+          name: Neofetch
+          command: apt install neofetch && neofetch 
